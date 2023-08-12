@@ -1,0 +1,50 @@
+.title{
+    text-align: center;
+    color: blue;
+}
+
+/*destop*/
+@media (min-width: 768px) {
+    .card-container {
+    
+        grid-template-columns: repeat(4, 1fr); 
+        grid-gap: 10px;
+    }
+
+    .slider {
+        display: flex;
+        overflow: hidden;
+    }
+
+    .slider-item {
+        flex: 0 0 calc(100% / 3); 
+    }
+}
+
+/*teléfonos*/
+@media (max-width: 767px) {
+    .card-container { 
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(2, 1fr); 
+        
+    }
+    .slider {
+        display: none; 
+    }
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.footer{
+    background-color:greenyellow;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+}
